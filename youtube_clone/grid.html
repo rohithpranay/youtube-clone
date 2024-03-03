@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: black;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(12,1fr);
+            grid-gap: 10px;
+        }
+        .item{
+            background-color: greenyellow;
+            border: 2px solid black;
+        }
+        .header{
+            grid-row: 1/2;
+            grid-column: 1/span12;
+        }
+        .sidebar{
+            grid-row: 2/11;
+            grid-column: 1/4;
+        }
+        .navigation{
+            grid-row: 2/3;
+            grid-column: 4/11;
+        }
+        .main{
+            grid-row:3/11;
+            grid-column: 4/11;
+        }
+        .ads{
+            grid-row: 2/11;
+            grid-column: 11/14;
+        }
+        .footer{
+            grid-row: 11/13;
+            grid-column: 1/14;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid PlayGround</h1>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item sidebar">sidebar</div>
+        <div class="item navigation">navigation</div>
+        <div class="item main">main</div>
+        <div class="item ads">ads</div>
+        <div class="item footer">footer</div>
+    </div>
+
+</body>
+</html>
